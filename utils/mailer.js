@@ -10,7 +10,8 @@ const transporter = nodemailer.createTransport({
 });
 
 async function sendVerificationEmail(to, token) {
-  const verificationURL = `${process.env.BASE_URL}/auth/verify-email?token=${token}`;
+  const verificationURL = `https://day-weather-app.onrender.com/auth/verify-email?token=${token}`;
+
 
 
   await transporter.sendMail({

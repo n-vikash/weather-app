@@ -13,7 +13,7 @@ router.get("/profile", (req, res) => {
 });
 
 
-router.get("/auth/dashboard", async (req, res) => {
+router.get("/dashboard", async (req, res) => {
   const user = req.session.user;
   if (!user) return res.redirect("/signin");
 
