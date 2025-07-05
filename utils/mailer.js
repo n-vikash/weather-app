@@ -24,7 +24,7 @@ async function sendVerificationEmail(to, token) {
 }
 async function sendResetEmail(to, token) {
   const baseURL = process.env.RESET_PASSWORD_BASE_URL || "http://localhost:3000";
-  const resetURL = `${baseURL}/auth/reset-password?token=${token}`;
+const resetURL = `${baseURL}/auth/reset-password?token=${token}`;
 
   await transporter.sendMail({
     from: `"Weather App" <${process.env.EMAIL_USER}>`,
