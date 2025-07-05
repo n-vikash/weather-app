@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("partials/head") %>
+  <title>Success</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('/images/ds-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .success-card {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px #f57c00;
+    }
+
+    .success-card h2 {
+      color: #00e676;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .success-card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .success-card a {
+      color: #f57c00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .success-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="success-card">
+    <h2>✅ Registration Successful, <%= name %>!</h2>
+    <p><%= message || "Welcome, your account has been created successfully." %></p>
+    <a href="/auth/signin">Click here to Sign In</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("partials/head") %>
+  <title><%= city.name %> Weather</title>
+</head>
+<body>
+  <div class="container weather-details">
+    <h2>🌤️ Weather in <%= city.name %></h2>
+    <p><strong>Temperature:</strong> <%= city.temp %> °C</p>
+    <p><strong>Condition:</strong> <%= city.description %></p>
+    <p><strong>Humidity:</strong> <%= city.humidity %>%</p>
+    <p><strong>Wind Speed:</strong> <%= city.wind %> m/s</p>
+    <a href="/dashboard" class="btn">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
+

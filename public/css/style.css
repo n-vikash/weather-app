@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/images/ds-bg.jpg') no-repeat center center fixed;
+background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+input, select, button {
+  width: 96%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#gender {
+    width:101.9%;
+}
+
+input, select {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+button {
+  background-color: #f57c00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fb8c00;
+}
+
+h2 {
+  text-align: center;
+  color: #f57c00;
+}
+
+a {
+  color: #f57c00;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.error {
+  background-color: #ff4d4d;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-icon {
+  background-color: #f57c00;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-card {
+  background: #2e2e2e;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+
+

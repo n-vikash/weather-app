@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include("partials/head") %>
+  <title>Profile</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Your Profile</h2>
+    <table>
+      <tr><th>Username</th><td><%= user.username %></td></tr>
+      <tr><th>Email</th><td><%= user.email %></td></tr>
+      <tr><th>Phone</th><td><%= user.phone %></td></tr>
+      <tr><th>Gender</th><td><%= user.gender %></td></tr>
+    </table>
+    <a href="/dashboard">⬅ Back to Dashboard</a>
+  </div>
+</body>
+</html>
