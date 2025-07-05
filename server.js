@@ -80,7 +80,7 @@ const apiRoutes = require("./routes/api");
 const indexRoutes = require("./routes/index");
 
 app.use("/auth", authRoutes);
-app.use("/", dashboardRoutes);
+app.use("/dashboard", dashboardRoutes);
 app.use("/api", apiRoutes);
 app.use("/", indexRoutes);
 
