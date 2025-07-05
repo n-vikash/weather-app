@@ -27,10 +27,19 @@ mongoose
 
 // Redis client (for local or Upstash)
 const redisClient = redis.createClient({
-  url: process.env.REDIS_URL, // safe for local or production
+  url: process.env.REDIS_URL,
+  socket: {
+    tls: true,
+    rejectUnauthorized: false
+  }
 });
-redisClient.connect().catch(console.error);
+
+redisClient.connect()
+  .then(() => console.log("✅ Redis connected (Upstash)"))
+  .catch(err => console.error("❌ Redis connection error:", err));
+
 app.set("cache", redisClient);
+
 
 // Sessions
 app.use(
